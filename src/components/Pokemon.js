@@ -5,11 +5,7 @@ const Pokemon = props => {
         <img className="poke-img" src={props.imgUrl} alt={props.pokemonName}/>
         <h2 className="poke-name">{props.pokemonName}</h2>
         <ul className="poke-list">
-            {props.typesArray.map((type, index) => {
-                return <li className="poke-list-li" key={index}>
-                    {type}
-                </li>
-            })}
+            {props.typesArray.map((type, index) => <li className="poke-list-li" key={index}>{type}</li>)}
         </ul>
     </div>
 }

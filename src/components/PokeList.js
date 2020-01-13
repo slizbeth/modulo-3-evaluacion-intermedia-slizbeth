@@ -2,9 +2,10 @@ import React from 'react';
 import Pokemon from './Pokemon';
 
 const PokeList = props => {
+    console.log(props);
     return <ul className="poke-list">
-        {props.pokemons.map((pokemons, index) => {
-            return <li key={index}>
+        {props.pokemons.map(pokemons => {
+            return <li key={pokemons.id}>
                 <Pokemon 
                     imgUrl={pokemons.url}
                     pokemonName={pokemons.name}

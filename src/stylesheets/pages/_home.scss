@@ -1,0 +1,79 @@
+// .App {
+//   // display: flex;
+//   // flex-direction: column;
+//   // justify-content: center;
+//   // align-items: center;
+// }
+
+
+.poke-list{
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .pokemon-container{
+    text-align: center;
+    border: 1px solid rgb(124, 121, 121);
+    border-radius: 8px;
+    background-color: rgba(187, 212, 209, 0.562);
+    // height: 280px;
+    // width: 200px;
+  }
+  
+}
+
+.poke-img {
+  width: 160px;
+  pointer-events: none;
+}
+
+
+.poke-list-li{
+  text-transform: uppercase;
+  background-color: rgb(116, 111, 111);
+  color: #fff;
+  border-radius: 8px;
+  width: 70px;
+}
+
+
+.poke-name{
+  border-top: 1px solid rgb(124, 121, 121);
+  border-bottom: 1px solid rgb(124, 121, 121);
+  padding: 3px;
+  text-transform: capitalize;
+}
+
+
+/* 
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .poke-img{
+    animation: poke-img-spin infinite 10s linear;
+  }
+}
+
+@keyframes poke-img-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(60deg);
+  }
+}
+
+.poke-list{
+  text-transform: capitalize;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+
+
+} */
